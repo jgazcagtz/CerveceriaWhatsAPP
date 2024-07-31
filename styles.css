@@ -35,29 +35,13 @@ header .title {
 }
 
 h1 {
-    margin: 0;
+    margin: 10;
     color: #d4af37;
 }
 
 h2 {
     margin: 10;
     color: #fff;
-}
-
-#decorative-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-#decorative-images img {
-    margin: 10px;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 2px solid #d4af37;
-    border-radius: 10px;
 }
 
 #menu {
@@ -67,7 +51,7 @@ h2 {
     margin-top: 20px;
 }
 
-.product {
+.product, .decorative-image {
     background-color: #333;
     border: 1px solid #d4af37;
     border-radius: 10px;
@@ -77,13 +61,21 @@ h2 {
     box-sizing: border-box;
 }
 
-.product h2 {
+.product h2, .decorative-image h2 {
     color: #d4af37;
     font-size: 1.2em;
 }
 
 .product p {
     font-size: 1em;
+}
+
+.decorative-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
 }
 
 #whatsapp-btn {
