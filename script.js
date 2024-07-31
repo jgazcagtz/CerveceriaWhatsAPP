@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "IPA de Jengibre"
     ];
 
-    const prices = [200, 250, 300]; // Precios fijos entre 200 y 300 pesos
+    const prices = [250, 300, 350]; // Precios fijos entre 250 y 350 pesos
     const menuSection = document.getElementById('menu');
 
     products.forEach(product => {
