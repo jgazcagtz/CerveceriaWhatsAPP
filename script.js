@@ -36,25 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const price = prices[Math.floor(Math.random() * prices.length)];
         const productDiv = document.createElement('div');
         productDiv.className = 'product';
-        productDiv.innerHTML = `<h2>${product.name}</h2><p>${product.description}</p><p>Precio: $${price} por dos botellas de 355 ml más envío</p>`;
+        productDiv.innerHTML = `
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <p>Precio: $${price} por dos botellas de 355 ml más envío</p>
+            <img src="${getRandomImage()}" alt="Imagen decorativa">
+        `;
         return productDiv;
     }
 
-    function createImageElement(src) {
-        const imageDiv = document.createElement('div');
-        imageDiv.className = 'decorative-image';
-        imageDiv.innerHTML = `<img src="${src}" alt="Imagen decorativa">`;
-        return imageDiv;
-    }
-
-    products.forEach((product, index) => {
-        if (index % 2 === 0) {
-            menuSection.appendChild(createProductElement(product));
-        }
-        menuSection.appendChild(createImageElement(getRandomImage()));
-        if (index % 2 !== 0 || index === products.length - 1) {
-            menuSection.appendChild(createProductElement(product));
-        }
+    products.forEach((product) => {
+        menuSection.appendChild(createProductElement(product));
     });
 
     const whatsappButton = document.getElementById('whatsapp-btn');
