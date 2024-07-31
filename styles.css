@@ -8,71 +8,70 @@ body {
 
 .container {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
     background-color: #6a0dad;
-    padding: 70px;
+    padding: 20px 10px;
     border-bottom: 2px solid #d4af37;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: relative;
 }
 
 header .logo {
-    position: absolute;
-    top: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 header .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 10px;
 }
 
 h1 {
-    margin: 10;
+    margin: 5px;
     color: #d4af37;
+    font-size: 1.5em;
 }
 
 h2 {
-    margin: 10;
+    margin: 5px;
     color: #fff;
+    font-size: 1.2em;
 }
 
 #menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .product, .decorative-image {
     background-color: #333;
     border: 1px solid #d4af37;
     border-radius: 10px;
-    margin: 10px;
-    padding: 15px;
-    width: 45%;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
     box-sizing: border-box;
 }
 
 .product h2, .decorative-image h2 {
     color: #d4af37;
-    font-size: 1.2em;
-}
-
-.product p {
     font-size: 1em;
 }
 
+.product p {
+    font-size: 0.9em;
+}
+
 .decorative-image img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border: 2px solid #d4af37;
     border-radius: 10px;
@@ -83,11 +82,11 @@ h2 {
     color: #fff;
     border: none;
     border-radius: 50px;
-    padding: 15px 20px;
-    font-size: 1.2em;
+    padding: 10px 15px;
+    font-size: 1em;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -98,6 +97,6 @@ h2 {
 
 footer p {
     margin: 10px 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #d4af37;
 }
