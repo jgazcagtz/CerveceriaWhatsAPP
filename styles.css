@@ -49,7 +49,7 @@ h2 {
     margin-top: 10px;
 }
 
-.product, .decorative-image {
+.product {
     background-color: #333;
     border: 1px solid #d4af37;
     border-radius: 10px;
@@ -58,11 +58,19 @@ h2 {
     width: 90%;
     max-width: 500px;
     box-sizing: border-box;
+    position: relative;
 }
 
-.product h2, .decorative-image h2 {
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.product h2 {
     color: #d4af37;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .product p {
@@ -75,6 +83,7 @@ h2 {
     object-fit: cover;
     border: 2px solid #d4af37;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 #whatsapp-btn {
