@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-    margin: 2;
+    margin: 10;
     color: #fff;
 }
 
@@ -102,4 +102,10 @@ h2 {
 
 #whatsapp-btn:hover {
     background-color: #20b358;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #d4af37;
 }
